@@ -3,21 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>我的JQuery Mobile	程式</title>
-    <link rel="stylesheet" href="https://code.jquery.com/Mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>	
     <meta name= "viewport" content="width=device-width,initial-scale=1">
+    <style>
+      #header{
+        background-color: brown;
+      }
+      #content{
+        color: darkblue;
+      }
+      #footer{
+        background-color: darkorange;
+        color: dodgerblue;
+      }
+    </style>    
   </head>
   <body>     
-    <div data-role="page">
-      <div data-role="header">
+    <div id="page">
+      <div id="header">
         <h1>游芳柏</h1>
        </div>
-      <div data-role="content">
+      <div id="content">
         <p>我叫游芳柏今年20歲，宜蘭人家中排行老大，目前是大三的學生。</p>
 	  </div>
-      <div data-role="footer">
-        <h4>&copy;台北城市科大</h4>
+      <div id="footer">
+        <h4>台北城市科大</h4>
       </div>     
     </div>	
   </body>
