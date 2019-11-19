@@ -4,13 +4,30 @@
     <meta charset="utf-8">
     <title>函式範例</title>
     <script language="javascript">
-      function Convert2F(DegreeC)	//宣告名稱為Convert2F、參數為DegreeC的函式
-      {
-        var DegreeF = DegreeC * 1.8 + 32;
-        alert("攝氏" + DegreeC + "度可以轉換為華氏" + DegreeF + "度");
-      }
-      var Temperature = prompt("請輸入攝氏溫度", "");
-      Convert2F(Temperature);		//呼叫函式時要將輸入的攝氏溫度當成參數傳入
+    int main ()
+
+{
+
+int c,f;
+
+printf("請輸入華氏溫度:");
+
+scanf("%d",&f);
+
+printf("華氏%d度=攝氏%d度\n",f,(f-32)*5/9);
+
+printf("請輸入攝氏溫度:");
+
+scanf("%d",&c);
+
+printf("攝氏%d度=華氏%d度\n",c,c*9/5+32);
+
+getch( );
+
+return 0;
+
+}
+     
     </script>
   </head>
   <body>
