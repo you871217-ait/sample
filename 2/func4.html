@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>函式範例</title>
-    <script language="javascript">
-      
-     function BBB(DegreeF)
-      {
+    <script language="javascript"> 
+     function BBB(DegreeF){
         var DegreeC = (DegreeF-32)*5/9;
         alert("華氏" + DegreeF + "度可以轉換為攝氏" + DegreeC + "度");
       }
@@ -16,12 +14,12 @@
         var DegreeF = DegreeC * 1.8 + 32;
         alert("攝氏" + DegreeC + "度可以轉換為華氏" + DegreeF + "度");
       }
-      var Number=prompt("輸入1:攝氏溫度,輸入:2華氏溫度","");
-          if(Number==1){
-            var HHH=prompt("請輸入華氏溫度");
-            BBB(HHH);
-          }else if(Number==2){
-            var Temperature=prompt("請輸入攝氏溫度");
+      var Number=prompt("輸入1:顯示華氏轉攝氏,輸入2:顯示攝氏轉華氏","");
+          if(Number == 1){
+            var xxx=prompt("請輸入華氏溫度","");
+            BBB(xxx);
+          }else if(Number == 2){
+            var Temperature=prompt("請輸入攝氏溫度","");
             Convert2F(Temperature);
           }     
     </script>
