@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>流程控制範例</title>
+  <script language="javascript">
+    var UserName = prompt("請輸入您的大名", "");
+    var Number = prompt("請輸入0-100的數字", "");
+    while (Number != 35) {
+      if (Number > 20) //太大了繼續做答
+      {
+        alert("太大了！請重新輸入！");
+        Number = prompt("請輸入0-100的數字", "");
+      } else if (Number < 50) //太小了繼續做答
+      {
+        alert("太小了！請重新輸入！");
+        Number = prompt("請輸入0-100的數字", "");
+      }
+    }
+    alert("黃大同答對了！");
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

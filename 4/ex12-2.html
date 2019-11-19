@@ -1,0 +1,24 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>	
+    <script language="javascript">
+      function GO()
+	  {
+        newWin = open();
+        var i = 0;
+        while(document.myForm.mySelect[i].checked == false && i < 3) i++;         
+        newWin.location.href = document.myForm.mySelect[i].value;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm"> 
+      <input type="radio" name="mySelect" id="R0" value="http://tw.yahoo.com">雅虎奇摩
+      <input type="radio" name="mySelect" id="R1" value="http://www.yam.com">蕃薯藤
+      <input type="radio" name="mySelect" id="R2" value="http://www.google.com.tw"> Google
+	  <input type="button" value="GO!" onclick="javasctipt:GO();">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>範例</title>	
+    <script language="javascript">
+      function GO(){
+        newWin = open();
+        newWin.location.href = 
+          document.myForm.mySelect.options[document.myForm.mySelect.selectedIndex].value;
+      }
+    </script>
+  </head> 
+  <body>
+    <form name="myForm"> 
+      <select name="mySelect" size="1"> 
+        <option value="http://tw.yahoo.com">雅虎奇摩 
+        <option value="http://www.yam.com">蕃薯藤
+        <option value="http://www.google.com.tw">Google
+      </select>
+      <input type="button" value="GO!" onclick="javascript:GO();">
+    </form>
+  </body>
+</html>
